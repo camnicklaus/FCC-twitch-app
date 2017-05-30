@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>FCC twitch app</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<header>
+  <div><a href="https://www.twitch.tv/" target="_blank"><img id="twitchLogo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_Logo_White.png" width="250px" alt="twitch logo"></img></a>   
+  </div>
+</header>
+
+<div class="flexible" id="searchBox">
+  <input type="text" placeholder="Search channels" class="searchBar" id="searchField">
+  <div class="searchBar click hover" id="enterBtn">Enter</div>
+  
+  <div class="flexible" id="sSelect">
+    <div class="searchBar option click btnHover" id="allChannels">All</div>
+    <div class="searchBar option click btnHover" id="online">Online</div>
+    <div class="searchBar option click btnHover" id="offline">Offline</div>
+    <div class="searchBar option click btnHover" id="refresh"><i class="fa fa-refresh" aria-hidden="true" id="refreshIcon"></i></div>
+  </div>
+</div>
+<div  id="displayChannels">
+
+</div>
+
+
+	<script src="scripts/main.js"></script>
+	<script src="https://use.fontawesome.com/4499dbe959.js"></script>
+
+</body>
+
+</html>

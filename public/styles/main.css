@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300');
+
+body {
+  background-color: RGB(100, 65, 165);
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-justify-content: center;
+  background-color: rgba(0,0,0,.2)
+}
+
+.flexible {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-justify-content: center;
+  -webkit-flex-flow: wrap;
+}
+
+#searchField {
+  margin: 0;
+  background: transparent; 
+  font-family: 'Comfortaa', cursive;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+#searchField:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.searchBar {
+  padding: 5px;
+  border: 1px solid white;
+  font-size: 1em;
+  color: white;
+}
+
+.option {
+  width: 54px;
+  text-align: center;
+}
+
+#sSelect {
+  margin-left: 1%;
+}
+
+#enterBtn, #online, #offline, #refresh {
+  border-left: none;
+}
+
+.btnHover:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.click:active {
+  background-color: white;
+  color: RGB(100, 65, 165);
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #twitchLogo {
+    width: 150px;
+  }
+    
+    #searchField, #enterBtn, #sSelect {
+      margin-bottom: 2px;
+    }
+}
+/*box for channels*/
+#displayChannels {
+  position: relative;
+  border-top: 1px solid rgba(255,255,255,.2);
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  background-color: rgba(255,255,255,.1);
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.channelDisplay, .moreStuff {
+  position: relative;
+  display: inline-block;
+  border-left: 1px solid rgba(255,255,255,.2);
+  width: 100%;
+}
+
+.moreStuff {
+  border-left: none;
+  margin-left: 5px;
+  padding-bottom: 5px;
+}
+
+.channelDisplay img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 0 5px 0 5px;
+  vertical-align: -17px;
+}
+
+img, h2, p, .redBox {
+  display: inline-block;
+}
+
+.redBox {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 4px;
+  background-color: rgba(255, 0, 0, .3);
+  display: inline-block;
+}
+
+.greenBox {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 4px;
+  background-color: rgba(0, 255, 0, .3);
+  display: inline-block;
+}
+
+a:link {
+  color: white;
+  
+}
+
+a:visited {
+  color: white;
+}
+
+.offline:hover {
+  background-color: rgba(255, 0, 0, .1);
+}
+
+.online:hover {
+  background-color: rgba(0, 255, 0, .1);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+.moreInfoBtn {
+  position: absolute;
+  right: 20Px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+  text-align: center;
+  line-height: 200%;
+}
+
+.moreInfoBtn:hover {
+  cursor: pointer;
+}
